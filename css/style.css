@@ -239,6 +239,31 @@ nav menu .container{
     background: var(--darkerBg);
     color: #fff;
 }
+.gallery-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    grid-gap: 1rem;
+}
+div .gallery-item  {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery-item div,
+.gallery-item a {
+    height: 100%;
+    width: 100%;
+}
+div .gallery-item a {
+    display: block;
+    background: rgba(0,0,0,0.5);
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+} 
+
 .view-portfolio {
     display: block;
     position: relative;
@@ -246,13 +271,8 @@ nav menu .container{
     width: 100%;
     cursor: pointer;
 }
-figure {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
-}
+
+
 .display-portfolio-main {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -332,6 +352,11 @@ a:-webkit-any-link {
 * {
     box-sizing: border-box;
 }
+.carousel-inner img {
+    width: 25%;
+    height: 15%;
+    
+}
 
 h1 {
     font-size: 50px;
@@ -364,32 +389,9 @@ h1 {
       width: 100%;
     }
 } 
-/* .gallery-box {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 150px);
-    grid-gap: 1rem;
-}
-.gallery-item  {
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.gallery-item div,
-.gallery-item a {
-    height: 100%;
-    width: 100%;
 
-}
 
-.gallery-item a {
-    display: block;
-    background: rgba(0,0,0,0.5);
-    font-size: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-}  */
+
 .testimonials {
     padding: 5rem 0;
     background: var(--darkBg);
@@ -432,6 +434,29 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
 }
+div.gallery {
+    margin: 7px;
+    border: px solid #ccc;
+    float: left;
+    width: 200px;
+    display: block;
+   
+  }
+  
+  div.gallery:hover {
+    border: 2px solid #777;
+  }
+  
+  div.gallery img {
+    
+    height: 250px; 
+    width: 200px;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
 .tools {
     padding: 0rem 3rem;
 }

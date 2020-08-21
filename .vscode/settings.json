@@ -4,5 +4,6 @@
         "flexbox",
         "rotateimg",
         "webgirl"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
